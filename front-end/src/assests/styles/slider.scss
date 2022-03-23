@@ -1,0 +1,26 @@
+.item-card {
+    padding: 15px;
+    height: 220px;
+    width: 250px;
+    margin: 10px;
+}
+
+.item-card img {
+    height: 150px;
+}
+
+.item-category {
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.item-slider {
+    scrollbar-width: 0;
+    overflow: hidden;
+}
+
+.item-slider::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

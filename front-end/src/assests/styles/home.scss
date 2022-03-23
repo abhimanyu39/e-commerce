@@ -1,0 +1,17 @@
+.carousel .item {
+  height: 300px;
+}
+
+.carousel-item img {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  height: 300px;
+}
+
+.slider-container {
+    background-color: #d1d1d1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

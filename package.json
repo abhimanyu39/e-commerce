@@ -8,12 +8,13 @@
     "server": "nodemon back-end/server.js",
     "client": "npm start --prefix front-end",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node back-end/routes/seederScript.js"
+    "data:import": "node back-end/seederScript.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.2.6"

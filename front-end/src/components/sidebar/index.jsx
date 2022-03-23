@@ -9,11 +9,7 @@ const SideBar = ({ show, setSideBar }) => {
   const sideBarMenu = [
     {
       label: "Home",
-      route: "/home",
-    },
-    {
-      label: "Products",
-      route: "/products",
+      route: "/",
     },
     {
       label: "Cart",
@@ -21,6 +17,7 @@ const SideBar = ({ show, setSideBar }) => {
     },
   ];
   const handleClick = (link) => {
+    setSideBar(false);
     navigate(link);
   };
   if (show) {
@@ -39,7 +36,7 @@ const SideBar = ({ show, setSideBar }) => {
         </Col>
       </Row>
       {sideBarMenu.map((item) => (
-        <Row onClick={() => handleClick(item.route)}>
+        <Row key={item.label} onClick={() => handleClick(item.route)}>
           <Col className="side-menu">{item.label}</Col>
         </Row>
       ))}

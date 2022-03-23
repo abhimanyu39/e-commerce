@@ -17,8 +17,8 @@ function App() {
           <NavBar setSideBar={setSideBarShow} />
           <SideBar show={sideBarShow} setSideBar={setSideBarShow} />
           <Routes>
-            <Route exact path="/home" element={<Home />} />
-            <Route exact path="/product" element={<Product />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/product/:id" element={<Product />} />
           </Routes>
         </Container>
       </BrowserRouter>
