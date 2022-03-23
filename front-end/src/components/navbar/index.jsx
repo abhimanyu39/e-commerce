@@ -1,4 +1,5 @@
 import React from "react";
+import '../../assests/styles/navbar.scss';
 import { Navbar, NavLink, Row, Col } from "react-bootstrap";
 
 const NavBar = ({ setSideBar }) => {
@@ -16,23 +17,8 @@ const NavBar = ({ setSideBar }) => {
         >
           <h1>My Shop</h1>
         </Col>
-        <Col xs="8" class="navbar navbar-light bg-light">
-          {/* <Row>
-            <Col xs="4" className="text-right">Home</Col>
-            <Col xs="4" className="text-right">Product</Col>
-            <Col xs="4" className="text-right">Logout</Col>
-          </Row> */}
-          <Navbar>
-            <NavLink className="text-light" href="/home">
-              Home
-            </NavLink>
-            <NavLink className="text-light" href="/product">
-              Product
-            </NavLink>
-            <NavLink className="text-light" href="/product">
-              Product
-            </NavLink>
-          </Navbar>
+        <Col xs="8" className="d-flex align-items-center">
+          <input className="search-box" type="text" placeholder="Search here..."/>
         </Col>
         <Col
           xs="1"

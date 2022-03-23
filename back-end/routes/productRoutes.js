@@ -1,5 +1,5 @@
 const express = require('express');
-const { getAllProducts, getProductById } = require('../controller/productControllers');
+const { getAllProducts, getProductById, addNewProduct } = require('../controller/productControllers');
 const router = express.Router();
 
 //@desc  GET all products from db
@@ -11,5 +11,10 @@ router.get('/', getAllProducts)
 //@route GET /api/products/:id
 //@access Public
 router.get('/:id', getProductById)
+
+//@desc POST a new product to db
+//@route POST /api/products/addnew
+//@access Public
+router.post('/addnew', addNewProduct)
 
 module.exports = router;
